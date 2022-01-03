@@ -1,0 +1,5 @@
+type TalkBoradThread @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String
+  memo: String
+}

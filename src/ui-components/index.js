@@ -4,4 +4,5 @@
  * Any changes to this file will be overwritten when running amplify pull. *
  **************************************************************************/
 
+export { default as CardHomeTalkCollection } from "./CardHomeTalkCollection";
 export { default as CardHomeTalk } from "./CardHomeTalk";

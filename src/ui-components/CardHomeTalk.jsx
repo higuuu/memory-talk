@@ -9,7 +9,7 @@ import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Text, View } from "@aws-amplify/ui-react";
 export default function CardHomeTalk(props) {
-  const { overrides: overridesProp, ...rest } = props;
+  const { cardTitle, overrides: overridesProp, ...rest } = props;
   const overrides = { ...overridesProp };
   return (
     <Flex
@@ -82,7 +82,7 @@ export default function CardHomeTalk(props) {
             position="relative"
             fontWeight="700"
             direction="column"
-            children="Title"
+            children={cardTitle?.title}
             {...getOverrideProps(overrides, "Flex.View[1].Flex[0].Text[0]")}
           ></Text>
         </Flex>
@@ -111,7 +111,7 @@ export default function CardHomeTalk(props) {
             position="relative"
             fontWeight="400"
             direction="column"
-            children="text"
+            children={cardTitle?.memo}
             {...getOverrideProps(overrides, "Flex.View[1].Flex[1].Text[0]")}
           ></Text>
         </Flex>
