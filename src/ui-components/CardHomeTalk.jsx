@@ -7,111 +7,110 @@
 /* eslint-disable */
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Flex, Text, View } from "@aws-amplify/ui-react";
+import { Flex, Image, Text, View } from "@aws-amplify/ui-react";
 export default function CardHomeTalk(props) {
-  const { cardTitle, overrides: overridesProp, ...rest } = props;
+  const { overrides: overridesProp, ...rest } = props;
   const overrides = { ...overridesProp };
   return (
     <Flex
+      gap="20px"
+      direction="row"
+      width="289px"
+      alignItems="flex-start"
+      overflow="hidden"
+      position="relative"
       border="1px SOLID rgba(0,0,0,1)"
+      borderRadius="8px"
       padding="0px 23px 0px 23px"
       backgroundColor="rgba(255,255,255,1)"
-      overflow="hidden"
-      alignItems="flex-start"
-      borderRadius="8px"
-      gap="20px"
-      width="289px"
-      position="relative"
-      direction="row"
       {...rest}
       {...getOverrideProps(overrides, "Flex")}
     >
       <View
+        width="60px"
+        height="100px"
+        shrink="0"
+        overflow="hidden"
+        position="relative"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
-        overflow="hidden"
-        shrink="0"
-        width="60px"
-        position="relative"
-        height="100px"
         {...getOverrideProps(overrides, "Flex.View[0]")}
       >
-        <View
-          padding="0px 0px 0px 0px"
-          backgroundColor="rgba(196.00000351667404,196.00000351667404,196.00000351667404,1)"
+        <Image
+          width="60px"
+          height="60px"
+          position="absolute"
+          left="0px"
           top="16px"
           borderRadius="8px"
-          left="0px"
-          width="60px"
-          position="absolute"
-          height="60px"
-          {...getOverrideProps(overrides, "Flex.View[0].View[0]")}
-        ></View>
+          padding="0px 0px 0px 0px"
+          {...getOverrideProps(overrides, "Flex.View[0].Image[0]")}
+        ></Image>
       </View>
       <View
+        width="185px"
+        height="100px"
+        shrink="0"
+        overflow="hidden"
+        position="relative"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
-        overflow="hidden"
-        shrink="0"
-        width="185px"
-        position="relative"
-        height="100px"
         {...getOverrideProps(overrides, "Flex.View[1]")}
       >
         <Flex
-          padding="16px 0px 0px 8px"
-          alignItems="center"
-          top="0px"
-          left="0px"
           gap="10px"
-          width="195px"
-          position="absolute"
           direction="row"
+          width="195px"
+          alignItems="center"
+          position="absolute"
+          left="0px"
+          top="0px"
+          padding="16px 0px 0px 8px"
           {...getOverrideProps(overrides, "Flex.View[1].Flex[0]")}
         >
           <Text
-            padding="0px 0px 0px 0px"
-            color="rgba(0,0,0,1)"
-            textAlign="left"
-            shrink="0"
-            display="flex"
-            justifyContent="flex-start"
             fontFamily="Roboto"
             fontSize="18px"
-            lineHeight="21.09375px"
-            position="relative"
             fontWeight="700"
+            color="rgba(0,0,0,1)"
+            lineHeight="21.09375px"
+            textAlign="left"
+            display="flex"
             direction="column"
-            children={cardTitle?.title}
+            justifyContent="flex-start"
+            shrink="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            children="Title"
             {...getOverrideProps(overrides, "Flex.View[1].Flex[0].Text[0]")}
           ></Text>
         </Flex>
         <Flex
-          padding="0px 0px 0px 8px"
-          alignItems="flex-start"
-          top="42px"
-          left="0px"
           gap="8px"
-          width="195px"
-          position="absolute"
           direction="row"
+          width="195px"
           height="58px"
+          alignItems="flex-start"
+          position="absolute"
+          left="0px"
+          top="42px"
+          padding="0px 0px 0px 8px"
           {...getOverrideProps(overrides, "Flex.View[1].Flex[1]")}
         >
           <Text
-            padding="0px 0px 0px 0px"
-            color="rgba(0,0,0,1)"
-            textAlign="left"
-            shrink="0"
-            display="flex"
-            justifyContent="flex-start"
             fontFamily="Roboto"
             fontSize="12px"
-            lineHeight="14.0625px"
-            position="relative"
             fontWeight="400"
+            color="rgba(0,0,0,1)"
+            lineHeight="14.0625px"
+            textAlign="left"
+            display="flex"
             direction="column"
-            children={cardTitle?.memo}
+            justifyContent="flex-start"
+            shrink="0"
+            position="relative"
+            padding="0px 0px 0px 0px"
+            children="text"
             {...getOverrideProps(overrides, "Flex.View[1].Flex[1].Text[0]")}
           ></Text>
         </Flex>
