@@ -1,11 +1,11 @@
 import './App.css';
-import { CardHomeTalkCollection } from './ui-components';
-import { Share } from './ui-components'
+import { CardHomeTalkCollection,Share,OnlyLike } from './ui-components';
  
 function App() {
   return (
     <div className="App">
       <CardHomeTalkCollection />
+      <OnlyLike />
       <Share />
     </div>
   );

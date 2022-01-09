@@ -7,3 +7,4 @@
 export { default as Share } from "./Share";
 export { default as CardHomeTalkCollection } from "./CardHomeTalkCollection";
 export { default as CardHomeTalk } from "./CardHomeTalk";
+export { default as OnlyLike } from "./OnlyLike";
