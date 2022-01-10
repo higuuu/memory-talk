@@ -1,12 +1,10 @@
 import './App.css';
-import { CardHomeTalkCollection,Share,OnlyLike } from './ui-components';
+import Router from './router.tsx';
  
 function App() {
   return (
     <div className="App">
-      <CardHomeTalkCollection />
-      <OnlyLike />
-      <Share />
+      <Router/>
     </div>
   );
 }
