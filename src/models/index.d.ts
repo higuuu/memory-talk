@@ -12,6 +12,7 @@ export declare class TalkBoradThread {
   readonly id: string;
   readonly title?: string;
   readonly memo?: string;
+  readonly url?: string;
   readonly createdAt?: string;
   readonly updatedAt?: string;
   constructor(init: ModelInit<TalkBoradThread, TalkBoradThreadMetaData>);

@@ -43,6 +43,7 @@ export default function CardHomeTalkCollection(props) {
           margin="0 0 1rem 0"
           cardTitle={item}
           height="auto"
+          url={item.url}
           key={item.id}
           {...getOverrideProps(overrides, "Collection.CardHomeTalk[0]")}
         ></CardHomeTalk>

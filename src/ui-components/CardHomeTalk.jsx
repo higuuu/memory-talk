@@ -9,7 +9,7 @@ import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
 import { Flex, Image, Text, View } from "@aws-amplify/ui-react";
 export default function CardHomeTalk(props) {
-  const { overrides: overridesProp, ...rest } = props;
+  const { url, overrides: overridesProp, ...rest } = props;
   const overrides = { ...overridesProp };
   return (
     <Flex
@@ -54,6 +54,7 @@ export default function CardHomeTalk(props) {
             top="16px"
             borderRadius="8px"
             padding="0px 0px 0px 0px"
+            src={url}
             {...getOverrideProps(overrides, "Flex.Flex[0].View[0].Image[0]")}
           ></Image>
         </View>
